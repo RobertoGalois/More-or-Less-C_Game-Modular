@@ -1,3 +1,6 @@
+.PHONY: clean
+.SUFFIXES:
+
 moreOrLessGame: check.o game.o level.o main.o show.o system.o
 	gcc -o moreOrLessGame check.o game.o level.o main.o show.o system.o
 check.o: check.c check.h system.h
